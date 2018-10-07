@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var array = [];
+    for (var i=0;i<10;i++){
+        var enterNumber = parseInt(prompt('Enter the numbers '+ (i+1) + ' to make array:'));
+        array.push(enterNumber);
+    }
+    var k=true;
+    var v = [];
+    var enterV = parseInt(prompt('Enter the numbers V:'));
+    v.push(enterV);
+    for (var j=0; j<array.length;j++){
+        if (array[j] === v[0]){
+            k=true;}
+        if (array[j]!== v[0]){
+            k=false;}
+    } if (k)
+        alert('V is in the array');
+    else alert("V is not in the array")
+</script>
+</body>
+</html>

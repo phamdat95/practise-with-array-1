@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var limitNumber = parseInt(prompt('the length of array'));
+    var array = [];
+    for (var i=0;i<limitNumber;i++){
+        var enterNumber = parseInt(prompt('Enter the numbers '+ (i+1) + ' to make array:'));
+        array.push(enterNumber);
+    }
+    array.reverse();
+    alert(array);
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var limitNumber = parseInt(prompt('the length of array'));
+    var array = [];
+    for (var i=0;i<limitNumber;i++){
+        var enterNumber = parseInt(prompt('Enter the numbers '+ (i+1) + ' to make array:'));
+        array.push(enterNumber);
+    }
+    var count = 0;
+    for (var j=0; j<array.length;j++){
+        if (array[j]< 0)
+            count += 1;
+    }
+    alert('Have ' +count+ ' numbers greater than 0');
+</script>
+</body>
+</html>

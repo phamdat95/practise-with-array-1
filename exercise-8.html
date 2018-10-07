@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var array = [];
+    for (var i=0;i<10;i++){
+        var enterNumber = parseInt(prompt('Enter the numbers '+ (i+1) + ' to make array:'));
+        array.push(enterNumber);
+    }
+    array.sort(function (a, b) {
+        return b-a;
+    });
+    alert(array);
+</script>
+</body>
+</html>
